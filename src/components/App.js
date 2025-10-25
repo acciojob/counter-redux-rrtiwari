@@ -8,12 +8,14 @@ const App = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="app-container">
+    <div>
       <h1>{count}</h1>
-      <div className="button-container">
-        <button onClick={() => dispatch(increment())}>increment</button>
-        <button onClick={() => dispatch(decrement())}>decrement</button>
-      </div>
+      <button id="increment-btn" onClick={() => dispatch(increment())}>
+        increment
+      </button>
+      <button id="decrement-btn" onClick={() => dispatch(decrement())}>
+        decrement
+      </button>
     </div>
   );
 };
